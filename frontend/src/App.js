@@ -29,8 +29,8 @@ function App() {
 
       {/* Routes for the second project */}
       <Route path="/dashboard/*" element={<Dashboard />} />
-      <Route path="/dashboard/bookslist" element={<BooksList />} />
-      <Route path="/dashboard/viewchat" element={<ViewChat />} />
+      <Route path="/dashboard/home/bookslist" element={<BooksList />} />
+      <Route path="/dashboard/userslist/viewchat" element={<ViewChat />} />
       <Route path="/auth/*" element={<Auth />} />
 
       {/* Default fallback route */}

@@ -49,10 +49,10 @@ export function Configurator() {
   const sidenavColors = {
     white: "from-gray-100 to-gray-100 border-gray-200",
     dark: "from-black to-black border-gray-200",
-    green: "from-green-400 to-green-600",
-    orange: "from-orange-400 to-orange-600",
-    red: "from-red-400 to-red-600",
-    pink: "from-pink-400 to-pink-600",
+    // green: "from-green-400 to-green-600",
+    // orange: "from-orange-400 to-orange-600",
+    // red: "from-red-400 to-red-600",
+    // pink: "from-pink-400 to-pink-600",
   };
 
   React.useEffect(() => {
@@ -112,25 +112,27 @@ export function Configurator() {
           <Typography variant="small" color="gray">
             Choose between 3 different sidenav types.
           </Typography>
-          <div className="mt-3 flex items-center gap-2">
+          <div className="mt-3 flex justify-center space-x-12">
             <Button
+              className="w-2/4"
               variant={sidenavType === "dark" ? "gradient" : "outlined"}
               onClick={() => setSidenavType(dispatch, "dark")}
             >
               Dark
             </Button>
             <Button
+              className="w-2/4"
               variant={sidenavType === "transparent" ? "gradient" : "outlined"}
               onClick={() => setSidenavType(dispatch, "transparent")}
             >
               Transparent
             </Button>
-            <Button
+            {/* <Button
               variant={sidenavType === "white" ? "gradient" : "outlined"}
               onClick={() => setSidenavType(dispatch, "white")}
             >
               White
-            </Button>
+            </Button> */}
           </div>
         </div>
         <div className="mb-12">

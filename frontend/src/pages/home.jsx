@@ -1,4 +1,3 @@
-
 import {
   ArrowPathIcon,
   ChevronRightIcon,
@@ -7,65 +6,70 @@ import {
   FingerPrintIcon,
   LockClosedIcon,
   ServerIcon,
-} from '@heroicons/react/20/solid'
-import { BoltIcon, CalendarDaysIcon, AcademicCapIcon,CalculatorIcon, } from '@heroicons/react/24/outline'
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import { Link } from 'react-router-dom';
+} from "@heroicons/react/20/solid";
+import {
+  BoltIcon,
+  CalendarDaysIcon,
+  AcademicCapIcon,
+  CalculatorIcon,
+} from "@heroicons/react/24/outline";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import { Link } from "react-router-dom";
+import PhysicLogo from "../data/images/physics.png";
 
 const primaryFeatures = [
   {
-    name: 'Get Instant Answers',
+    name: "Get Instant Answers",
     description:
-    'No more waiting-Get quick and accurate answers to your queries in real-time. Elevate your learning experience with our chatbot at your fingertips.',
-    
+      "No more waiting-Get quick and accurate answers to your queries in real-time. Elevate your learning experience with our chatbot at your fingertips.",
+
     icon: BoltIcon,
   },
   {
-    name: 'Prepare for Entry Tests',
+    name: "Prepare for Entry Tests",
     description:
-    'Tailored to meet your exam preparation needs and valuable insights to help you excel. Prepare for entry tests with confidence using our specialized chatbot!',
-    
+      "Tailored to meet your exam preparation needs and valuable insights to help you excel. Prepare for entry tests with confidence using our specialized chatbot!",
+
     icon: AcademicCapIcon,
   },
   {
-    name: 'Accurate Numerical Solutions',
+    name: "Accurate Numerical Solutions",
     description:
-    ' Navigate through intricate equations, receive step-by-step solutions, and gain confidence in the precision of your results.',
-    
+      " Navigate through intricate equations, receive step-by-step solutions, and gain confidence in the precision of your results.",
+
     icon: CalculatorIcon,
   },
-]
-
+];
 
 const footerNavigation = {
   solutions: [
-    { name: 'Hosting', href: '#' },
-    { name: 'Data Services', href: '#' },
-    { name: 'Uptime Monitoring', href: '#' },
-    { name: 'Enterprise Services', href: '#' },
+    { name: "Hosting", href: "#" },
+    { name: "Data Services", href: "#" },
+    { name: "Uptime Monitoring", href: "#" },
+    { name: "Enterprise Services", href: "#" },
   ],
   support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Reference', href: '#' },
+    { name: "Pricing", href: "#" },
+    { name: "Documentation", href: "#" },
+    { name: "Guides", href: "#" },
+    { name: "API Reference", href: "#" },
   ],
   company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: "About", href: "#" },
+    { name: "Blog", href: "#" },
+    { name: "Jobs", href: "#" },
+    { name: "Press", href: "#" },
+    { name: "Partners", href: "#" },
   ],
   legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: "Claim", href: "#" },
+    { name: "Privacy", href: "#" },
+    { name: "Terms", href: "#" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: 'https://www.facebook.com/profile.php?id=100052023210150',
+      name: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=100052023210150",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -77,8 +81,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: 'https://www.instagram.com/accounts/login/',
+      name: "Instagram",
+      href: "https://www.instagram.com/accounts/login/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -90,8 +94,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Twitter',
-      href: 'https://twitter.com/i/flow/login',
+      name: "Twitter",
+      href: "https://twitter.com/i/flow/login",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -99,8 +103,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'GitHub',
-      href: 'https://github.com/farwaali8',
+      name: "GitHub",
+      href: "https://github.com/farwaali8",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -112,8 +116,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'YouTube',
-      href: 'https://www.youtube.com/@OpenAI',
+      name: "YouTube",
+      href: "https://www.youtube.com/@OpenAI",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -125,7 +129,7 @@ const footerNavigation = {
       ),
     },
   ],
-}
+};
 
 export default function MyHome() {
   return (
@@ -155,7 +159,12 @@ export default function MyHome() {
                 strokeWidth={0}
               />
             </svg>
-            <rect width="100%" height="100%" strokeWidth={0} fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
+            <rect
+              width="100%"
+              height="100%"
+              strokeWidth={0}
+              fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"
+            />
           </svg>
           <div
             className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
@@ -165,64 +174,71 @@ export default function MyHome() {
               className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
               style={{
                 clipPath:
-                  'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+                  "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
               }}
             />
           </div>
           <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-40 lg:flex lg:px-8 lg:pt-10">
             <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-5 ">
-             
-             <AutoStoriesIcon className="text-emerald-300  "style={{ fontSize: '4rem' }}
- />
-             
-            
-
+              <AutoStoriesIcon
+                className="text-emerald-300  "
+                style={{ fontSize: "4rem" }}
+              />
+              {/* <img
+                src={PhysicLogo}
+                alt="Logo"
+                style={{ width: "40px", height: "40px", marginRight: "5px" }}
+              /> */}
 
               <h1 className="mt-5 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Have a quick chat with our Physics bot.
+                Have a quick chat with our Physics bot.
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-              <i>Elevate your physics studies with our AI-powered physics chatbot.</i><br />
-              <i>Solve numericals, tackle problems, and prepare for exams effortlessly.</i>
+                <i>
+                  Elevate your physics studies with our AI-powered physics
+                  chatbot.
+                </i>
+                <br />
+                <i>
+                  Solve numericals, tackle problems, and prepare for exams
+                  effortlessly.
+                </i>
               </p>
               <div className="mt-10 flex items-center gap-x-6">
-                
-                  <Link
-                   to="/signup" 
-                    className="rounded-md bg-emerald-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
-                   >
-                 
-                
+                <Link
+                  to="/signup"
+                  className="rounded-md bg-emerald-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+                >
                   Get started
                 </Link>
-                < Link
-                   to="/login" className="text-sm font-semibold leading-6 text-white">
+                <Link
+                  to="/login"
+                  className="text-sm font-semibold leading-6 text-white"
+                >
                   Login <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
-           
           </div>
         </div>
 
-        
         <div className="mx-auto  max-w-7xl px-6 sm:mt-0.5 lg:px-8">
-          
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className=" grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {primaryFeatures.map((feature) => (
                 <div key={feature.name} className="flex flex-col ">
                   <dt className="text-base font-semibold leading-7 text-white ">
                     <div className=" mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500">
-                      <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                      <feature.icon
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                     </div>
                     {feature.name}
                   </dt>
                   <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                     <p className="flex-auto">{feature.description}</p>
-                    <p className="mt-6">
-                      
-                    </p>
+                    <p className="mt-6"></p>
                   </dd>
                 </div>
               ))}
@@ -234,10 +250,15 @@ export default function MyHome() {
         <div className="mt-18 sm:mt-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center">
-              <h2 className="text-base font-semibold leading-7 text-indigo-400">Everything you need</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">No solution? No problem.</p>
+              <h2 className="text-base font-semibold leading-7 text-indigo-400">
+                Everything you need
+              </h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                No solution? No problem.
+              </p>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-              Gain insights into challenging Physics concepts and find solutions to your intricate queries.
+                Gain insights into challenging Physics concepts and find
+                solutions to your intricate queries.
               </p>
             </div>
           </div>
@@ -250,23 +271,24 @@ export default function MyHome() {
                 width={2432}
                 height={1442}
               /> */}
-              <video autoPlay loop muted className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"
-                  width={2432}
-                  height={1442} >
-    <source src="/videooo.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-              
-              
+              <video
+                autoPlay
+                loop
+                muted
+                className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"
+                width={2432}
+                height={1442}
+              >
+                <source src="/videooo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
               <div className="relative" aria-hidden="true">
                 <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]" />
               </div>
             </div>
           </div>
-          
         </div>
-
-        
 
         {/* CTA section */}
         <div className="relative isolate mt-32 px-6 py-32 sm:mt-56 sm:py-40 lg:px-8">
@@ -292,7 +314,12 @@ export default function MyHome() {
                 strokeWidth={0}
               />
             </svg>
-            <rect width="100%" height="100%" strokeWidth={0} fill="url(#1d4240dd-898f-445f-932d-e2872fd12de3)" />
+            <rect
+              width="100%"
+              height="100%"
+              strokeWidth={0}
+              fill="url(#1d4240dd-898f-445f-932d-e2872fd12de3)"
+            />
           </svg>
           <div
             className="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
@@ -302,7 +329,7 @@ export default function MyHome() {
               className="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
               style={{
                 clipPath:
-                  'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+                  "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
               }}
             />
           </div>
@@ -313,29 +340,26 @@ export default function MyHome() {
               Start preparing for your entry tests.
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-           
-             Explore our platform to unravel the complexities of Physics and elevate your knowledge.
+              Explore our platform to unravel the complexities of Physics and
+              elevate your knowledge.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-                
-                  <Link
-                   to="/signup" 
-                    className="rounded-md bg-emerald-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
-                   >
-                 
-                
-                  Get started
-                </Link>
-                < Link
-                   to="/login" className="text-sm font-semibold leading-6 text-white">
-                  Login <span aria-hidden="true">→</span>
-                </Link>
-              </div>
-        </div>
+              <Link
+                to="/signup"
+                className="rounded-md bg-emerald-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+              >
+                Get started
+              </Link>
+              <Link
+                to="/login"
+                className="text-sm font-semibold leading-6 text-white"
+              >
+                Login <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
-          
+        </div>
       </main>
-
       {/* Footer */}
       <footer aria-labelledby="footer-heading" className="relative">
         <h2 id="footer-heading" className="sr-only">
@@ -345,7 +369,11 @@ export default function MyHome() {
           <div className="border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
             <div className="flex space-x-6 md:order-2">
               {footerNavigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-400">
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-500 hover:text-gray-400"
+                >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
@@ -357,9 +385,7 @@ export default function MyHome() {
           </div>
         </div>
       </footer>
-    </div>
-  )
+          
+    </div>
+  );
 }
-
-
-
