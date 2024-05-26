@@ -17,14 +17,14 @@ export function Userslist() {
       <Card>
         <CardHeader variant="gradient" color="gray" className="mb-8 p-6">
           <Typography variant="h6" color="white">
-          Users List
+            Users List
           </Typography>
         </CardHeader>
         <CardBody className="overflow-x-scroll px-0 pt-0 pb-2">
           <table className="w-full min-w-[640px] table-auto">
             <thead>
               <tr>
-                {["Users", "status", "Date", "Operation"].map((el) => (
+                {["Users", "View Chat", "Delete"].map((el) => (
                   <th
                     key={el}
                     className="border-b border-blue-gray-50 py-3 px-5 text-left"
@@ -52,7 +52,12 @@ export function Userslist() {
                     <tr key={name}>
                       <td className={className}>
                         <div className="flex items-center gap-4">
-                          <Avatar src={img} alt={name} size="sm" variant="rounded" />
+                          <Avatar
+                            src={img}
+                            alt={name}
+                            size="sm"
+                            variant="rounded"
+                          />
                           <div>
                             <Typography
                               variant="small"
@@ -67,31 +72,41 @@ export function Userslist() {
                           </div>
                         </div>
                       </td>
-                      
-                      <td className={className}>
-                        <Chip
-                          variant="gradient"
-                          color={online ? "green" : "blue-gray"}
-                          value={online ? "online" : "offline"}
-                          className="py-0.5 px-2 text-[11px] font-medium w-fit"
-                        />
-                      </td>
-                      <td className={className}>
+
+                      {/*  */}
+                      {/* <td className={className}>
                         <Typography className="text-xs font-semibold text-blue-gray-600">
                           {date}
                         </Typography>
-                      </td>
-                      <td className={className}>
-<Link to="/dashboard/viewchat">
-<button
-                          
-                          className="text-xs font-semibold text-white bg-green-500 hover:bg-green-600 py-0.5 px-2 rounded-md focus:outline-none inline-block"
-                          style={{ fontSize: '12px', width: 'fit-content' }}
+                      </td> */}
+                      {/* <td className={className}>
+                        <Link to="/dashboard/viewchat">
+                          <button
+                            className="text-xs font-semibold text-white bg-green-500 hover:bg-green-600 py-0.5 px-2 rounded-md focus:outline-none inline-block"
+                            style={{ fontSize: "12px", width: "fit-content" }}
                           >
-                         View Chat
+                            View Chat
+                          </button>
+                        </Link>
+                      </td> */}
+                      <td className={className}>
+                        <Link to="/dashboard/userslist/viewchat">
+                          <button
+                            className="px-2 py-0.5 bg-green-500 hover:bg-green-600 text-white rounded-md focus:outline-none inline-block"
+                            style={{ fontSize: "14px", width: "fit-content" }}
+                          >
+                            View Chat
+                          </button>
+                        </Link>
+                      </td>
+                      <td className="py-3 px-5 border-b border-blue-gray-50">
+                        <button
+                          // onClick={() => handleDelete(fileName)}
+                          className="px-2 py-0.5 bg-red-500 hover:bg-red-600 text-white rounded-md focus:outline-none inline-block"
+                          style={{ fontSize: "14px", width: "fit-content" }}
+                        >
+                          Delete
                         </button>
-</Link>
-                       
                       </td>
                     </tr>
                   );
@@ -101,9 +116,8 @@ export function Userslist() {
           </table>
         </CardBody>
       </Card>
-     
     </div>
   );
 }
 
-export default  Userslist;
+export default Userslist;

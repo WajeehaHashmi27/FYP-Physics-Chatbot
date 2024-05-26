@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
-import { Cog6ToothIcon } from "@heroicons/react/24/solid";
-import { IconButton } from "@material-tailwind/react";
+import { Routes, Route, Link } from "react-router-dom";
+import { Cog6ToothIcon, UserCircleIcon } from "@heroicons/react/24/solid";
+import { Button, IconButton } from "@material-tailwind/react";
 import {
   Sidenav,
   DashboardNavbar,
@@ -28,7 +28,7 @@ export function Dashboard() {
       <div className="p-4 xl:ml-80">
         <DashboardNavbar />
         <Configurator />
-        <IconButton
+        {/* <IconButton
           size="lg"
           color="white"
           className="fixed bottom-8 right-8 z-40 rounded-full shadow-blue-gray-900/10"
@@ -36,7 +36,7 @@ export function Dashboard() {
           onClick={() => setOpenConfigurator(dispatch, true)}
         >
           <Cog6ToothIcon className="h-5 w-5" />
-        </IconButton>
+        </IconButton> */}
         <Routes>
           {routes.map(
             ({ layout, pages }) =>
@@ -46,6 +46,7 @@ export function Dashboard() {
               ))
           )}
         </Routes>
+
         {/* <div className="text-blue-gray-600">
           <Footer /> // Commenting out the rendering of Footer
         </div> */}
